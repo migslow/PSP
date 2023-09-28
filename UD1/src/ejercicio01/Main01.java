@@ -6,14 +6,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class Main {
+public class Main01 {
 
 	public static void main(String[] args) {
 		try {
 			// Ejecutamos un proceso que lanza el programa Ejercicio01b y le pasamos un
 			// argumento
 			File f = new File(".\\bin");
-			ProcessBuilder pb = new ProcessBuilder("java", "ejercicio01.Ejercicio01b", args[0]);
+			ProcessBuilder pb = new ProcessBuilder("java", "ejercicio01.Ejercicio01", args[0]);
 			pb.directory(f);
 			Process p = pb.start();
 
