@@ -16,14 +16,14 @@ public class Main02 {
 			Process p = pb.start();
 			InputStream is = p.getInputStream();
 			BufferedReader br = new BufferedReader(new InputStreamReader(is));
-			
+
 			int aux;
-			while((aux = br.read()) != -1) {
+			while ((aux = br.read()) != -1) {
 				System.out.print((char) aux);
 			}
 			br.close();
 			is.close();
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
