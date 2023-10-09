@@ -2,8 +2,8 @@ package ejemplo03_Yield;
 
 public class Hilo extends Thread {
 
-	public Hilo(String nombre) {
-		super(nombre);
+	public Hilo(String string) {
+		super();
 	}
 
 	public void run() {
