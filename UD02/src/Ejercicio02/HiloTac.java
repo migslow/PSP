@@ -1,6 +1,7 @@
-package Ejercicio01;
+package Ejercicio02;
 
-public class HiloTac extends Thread {
+public class HiloTac implements Runnable {
+	
 	public HiloTac() {
 		super();
 	}
@@ -9,7 +10,7 @@ public class HiloTac extends Thread {
 		do {
 			System.out.println("Tac");
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
