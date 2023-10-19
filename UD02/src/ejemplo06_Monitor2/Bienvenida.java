@@ -14,12 +14,12 @@ public class Bienvenida {
 		notifyAll();
 	}
 
-	public synchronized void saludoAlumno() {
+	public synchronized void saludoAlumno(String nombre) {
 		try {
 			while (!claseComenzada) {
 				wait();
 			}
-			System.out.println("Buenos dias.");
+			System.out.println("Buenos dias." + " El hilo: " + nombre);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

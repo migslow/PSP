@@ -11,10 +11,10 @@ public class Alumno extends Thread {
 	}
 
 	public void run() {
-		System.out.println("El alumno" + nombre + " a llegado");
+		System.out.println("El alumno " + nombre + " a llegado");
 		try {
 			sleep(1000);
-			bienvenida.saludoAlumno();
+			bienvenida.saludoAlumno(nombre);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 			e.getMessage();
